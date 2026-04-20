@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Naushin Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Naushin</h2>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button onclick="toggleMode()">🌙</button>
+  </nav>
+
+  <!-- HOME -->
+  <section class="home">
+  <div class="home-text">
+    <h1>Hi, I'm Naushin 👋</h1>
+    <p>Computer Science and Design| Full Stack Web Development Intern</p>
+    <button onclick="scrollToSection()">View Projects</button>
+  </div>
+
+  <div class="home-img">
+    <img src="profile.jpg" alt="My Photo">
+  </div>
+</section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a 2nd Year, Computer Science and Design( specialization in CSE) student passionate about web development.I enjoy working with python,flask,and modern technologies.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>MySQL</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>AutoCad</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>Habit Tracker – Flask, Chart.js, SQLite</p>
+    <p>Snake and Ladder game – Python, Pygame, Turtle</p>
+    <p>Guess the Number game – Python</p>
+    <p>Basic Calculator – Python</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <input type="text" placeholder="Your Name"><br><br>
+    <input type="email" placeholder="Your Email"><br><br>
+    <button onclick="showMessage()">Send</button>
+    <p id="msg"></p>
+
+    <p>Email: <a href="mailto:naushinalam786@gmail.com">naushinalam@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/naushin-alam-14384b375/">My LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/naushinalam1105">My GitHub</a></p>
+
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
