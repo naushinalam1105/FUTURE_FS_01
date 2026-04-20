@@ -6,31 +6,25 @@ body {
 }
 
 /* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  background: #333;
-  color: white;
-  padding: 10px 20px;
+.navbar h2 {
+  position: relative;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.navbar h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background: #ffb300;
+  transition: 0.3s;
 }
 
-nav ul li {
-  margin: 0 10px;
+.navbar h2:hover::after {
+  width: 100%;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: yellow;
-}
 
 /* SECTIONS */
 section {
@@ -84,4 +78,93 @@ img:hover {
   width: 180px;
   height: 180px;
   border-radius: 50%;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f6f9;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px;
+  background: linear-gradient(to right, #fbd786, #f7797d);
+  color: black;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+/* Sections */
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Skills */
+.skills-box span {
+  background: #2575fc;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.skills-box span:hover {
+  transform: scale(1.1);
+}
+
+/* Cards */
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.tabs {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tabs button:hover {
+  background: black;
+}
+
+/* Hide sections initially */
+.content-section {
+  display: none;
+  padding: 30px;
 }
