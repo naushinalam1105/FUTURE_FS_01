@@ -8,23 +8,21 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav>
-    <h2>Naushin</h2>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button onclick="toggleMode()">🌙</button>
-  </nav>
+   <div class="tabs">
+  <h2> Portfolio of Naushin</h2>
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('skills')">Skills</button>
+  <button onclick="showSection('projects')">Projects</button>
+  <button onclick="showSection('contact')">Contact</button>
+  <button onclick="showSection('resume')">resume</button>
+  <button onclick="showSection('goals')">goals</button>
+</div>
 
   <!-- HOME -->
-  <section class="home">
-  <div class="home-text">
-    <h1>Hi, I'm Naushin 👋</h1>
+   <section class="hero">
+    <h1>Hi, I'm Naushin !</h1>
     <p>Computer Science and Design| Full Stack Web Development Intern</p>
-    <button onclick="scrollToSection()">View Projects</button>
+    <button onclick="scrollToSection()">CONTACT ME</button>
   </div>
 
   <div class="home-img">
@@ -33,34 +31,43 @@
 </section>
 
   <!-- ABOUT -->
-  <section id="about">
+ <section id="about" class="content-section">
     <h2>About Me</h2>
-    <p>I am a 2nd Year, Computer Science and Design( specialization in CSE) student passionate about web development.I enjoy working with python,flask,and modern technologies.</p>
+    <p>I am a 2nd Year, Computer Science and Design( specialization in CSE) student passionate about web development.I enjoy working with python,flask,and modern technologies.As a learner, I focus on building projects that strengthen my fundamentals rather than just theoretical knowledge. 
+I am particularly interested in creating user-friendly interfaces and understanding how things work behind the scenes.
+
+My goal is to become a skilled developer who can build real-world applications and contribute to meaningful projects.</p>
   </section>
 
   <!-- SKILLS -->
-  <section id="skills">
+  <section id="skills" class="content-section">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>MySQL</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>AutoCad</li>
-    </ul>
+    <div class="Skills-box">
+      <span>HTML,</span>
+      <span>MySQL,</span>
+      <span>JavaScript,</span>
+      <span>Python,</span>
+      <span>AutoCad,</span>
+      <span> DSA and C programming</span>
+    </div>
   </section>
 
+
   <!-- PROJECTS -->
-  <section id="projects">
+  <section id="projects" class="content-section">
     <h2>Projects</h2>
+    <div class="project-card">
+    <p>A personal interactive portfolio built using HTML, CSS, and JavaScript.</p>
     <p>Habit Tracker – Flask, Chart.js, SQLite</p>
     <p>Snake and Ladder game – Python, Pygame, Turtle</p>
     <p>Guess the Number game – Python</p>
     <p>Basic Calculator – Python</p>
+    </div>
   </section>
 
+
   <!-- CONTACT -->
-  <section id="contact">
+  <section id="contact" class="content-section">
     <h2>Contact</h2>
     <input type="text" placeholder="Your Name"><br><br>
     <input type="email" placeholder="Your Email"><br><br>
@@ -73,6 +80,23 @@
 
 
   </section>
+
+  <!---GOALS-->
+  <section id="goals" class="content-section">
+  <h2>Goals & Interests</h2>
+  <p>
+    My goal is to become a skilled full stack developer and learn practical implementation of knowledge. I want to build impactful projects.
+    I am interested in web technologies,Cybersecurity, media editing , Augmented and Virtual reality, and problem-solving.
+  </p>
+</section>
+
+  <!----RESUME-->
+  <section id="resume" class="content-section">
+  <h2>Resume</h2>
+  <a href="resume.pdf" download>
+    <button>Download Resume</button>
+  </a>
+</section>
 
   <script src="script.js"></script>
 
