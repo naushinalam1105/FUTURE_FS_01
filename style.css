@@ -1,12 +1,12 @@
 body {
   font-family: Arial;
   margin: 0;
+  background: #f4f6f9;
   scroll-behavior: smooth;
-  transition: 0.3s;
 }
 
 /* NAVBAR */
-.navbar h2 {
+.tabs h2 {
   position: relative;
 }
 
@@ -80,12 +80,6 @@ img:hover {
   border-radius: 50%;
 }
 
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f4f6f9;
-}
-
 /* Hero */
 .hero {
   text-align: center;
@@ -106,7 +100,7 @@ section {
 }
 
 /* Skills */
-.skills-box span {
+.Skills-box span {
   background: #2575fc;
   color: white;
   padding: 10px;
@@ -163,8 +157,3 @@ html {
   background: black;
 }
 
-/* Hide sections initially */
-.content-section {
-  display: none;
-  padding: 30px;
-}
